@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>549</x>
+      <y>162</y>
+      <w>252</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Login
+--
+-user : User
+-usernamePassword : UsernamePassword
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>342</x>
+      <y>342</y>
+      <w>144</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>User
+--
+-nationalID : String
+-User : String
+-Password : String
+-Date Brtdate : Calander
+-Email : String
+-Phone : String
+-photo : byte[]
+-address : String
+-gender : EnumGender
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>603</x>
+      <y>360</y>
+      <w>198</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>RelLoginPhonebook
+--
+-login : Login
+-phonebook : List&lt;Phonebook&gt;
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1395</x>
+      <y>90</y>
+      <w>117</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Dashbord
+--
+Contacts
+Add Contacts
+Manage Contacts
+Settings
+Logout</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1629</x>
+      <y>54</y>
+      <w>117</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Contacts
+--
+Viwe Contacts
+Edit Contacts
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>747</x>
+      <y>612</y>
+      <w>162</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>UserContact
+--
+-Name : String
+-Lest Name : String
+-Date Brtdate : Calander
+-contacts : List&lt;Contact&gt;
+-Emails : List&lt;String&gt;
+-Addres : String
+-descrption : String
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1629</x>
+      <y>180</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Manage Contacts
+--
+Backup and Restors
+Sharing
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1845</x>
+      <y>0</y>
+      <w>117</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Viwe Contacts
+--
+Searching
+Details Contacts
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1737</x>
+      <y>0</y>
+      <w>126</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;50.0;10.0;50.0;90.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1863</x>
+      <y>126</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Edit Contacts
+--
+Edit Details Contacts
+Delete Contacts</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1737</x>
+      <y>90</y>
+      <w>144</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;50.0;50.0;50.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1845</x>
+      <y>234</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Backup and Restors
+--
+Backup
+Restors
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1746</x>
+      <y>198</y>
+      <w>117</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;50.0;70.0;50.0;70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1395</x>
+      <y>270</y>
+      <w>108</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Settings
+--
+Accounts
+Change Thames
+About
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1557</x>
+      <y>315</y>
+      <w>117</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Accounts
+--
+Change User
+Change Password
+Change Email
+Change Number
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>153</x>
+      <y>459</y>
+      <w>144</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>EnumGender
+--
+MAN , WOMAN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>477</y>
+      <w>72</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>873</x>
+      <y>288</y>
+      <w>144</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>UsernamePassword
+--
+-username : String
+-password : String
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>405</x>
+      <y>180</y>
+      <w>162</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>189</y>
+      <w>198</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>190.0;110.0;190.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>684</x>
+      <y>234</y>
+      <w>36</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1017</x>
+      <y>612</y>
+      <w>162</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>Contact
+--
+-type : String
+-phone : String
+-Addres : String
+-descrption : String
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>900</x>
+      <y>639</y>
+      <w>135</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>810</y>
+      <w>207</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Group
+--
+-Name : String
+-descrption : String
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>630</y>
+      <w>99</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>423</x>
+      <y>621</y>
+      <w>252</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Phonebook
+--
+-relLoginPhonebook : RelLoginPhonebook
+-group : Group
+-userContact : List&lt;UserContact&gt;
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>558</x>
+      <y>711</y>
+      <w>36</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>567</x>
+      <y>432</y>
+      <w>144</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;210.0;10.0;120.0;130.0;120.0;130.0;10.0</additional_attributes>
+  </element>
+</diagram>
